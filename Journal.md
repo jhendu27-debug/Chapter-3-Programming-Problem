@@ -9,3 +9,6 @@ I used a `final int` constant for the array size because the capacity should sta
 
 A `double` can store decimal numbers, while an `int` only stores whole numbers. When I cast a `double` to an `int`, the decimal part is removed. Java makes me explicitly cast because converting from a `double` to an `int` can cause data to be lost.
 
+# Phase 3 Journal
+
+The two array elements showed the same change because both runes were connected to the same RuneCore object. When I changed the power source through the first rune, the second rune saw the change too. A primitive variable stores its actual value, while a reference variable stores the location of an object in memory.

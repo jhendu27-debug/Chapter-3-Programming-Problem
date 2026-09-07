@@ -4,6 +4,7 @@ public class ChaosRune {
     String name;
     RuneElement element;
     double energyLevel;
+    RuneCore core;
 
     public ChaosRune(int id, String name, RuneElement element, double energyLevel) {
         this.id = id;

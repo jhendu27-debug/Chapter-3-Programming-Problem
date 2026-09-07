@@ -18,5 +18,19 @@ public class Main {
 
         System.out.println("Original energy: " + runes[0].energyLevel);
         System.out.println("Truncated energy: " + truncatedEnergy);
+
+
+        // Create one shared RuneCore object
+        RuneCore sharedCore = new RuneCore("Aether Well");
+
+        // Connect the same core to two different runes
+        runes[0].core = sharedCore;
+        runes[1].core = sharedCore;
+
+        // Change the core using the first rune
+        runes[0].core.powerSource = "Void Rift";
+
+        // Print the core using the second rune
+        System.out.println("Second rune's core: " + runes[1].core.powerSource);
     }
 }
